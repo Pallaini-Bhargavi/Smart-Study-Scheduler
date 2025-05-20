@@ -1,0 +1,109 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f4f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #2980b9;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+      box-sizing: border-box;
+      z-index: 100;
+      position: fixed;
+    }
+
+    .header-left {
+      position: absolute;
+      left: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    header button {
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    header button:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 80px;
+      padding: 0 20px;
+      margin-top: 50px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      text-align: center;
+      cursor: pointer;
+      transition: box-shadow 0.3s ease;
+      margin-top: 60px;
+    }
+
+    .card:hover {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+      margin-top: 10px;
+      color: #2980b9;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      
+      text-align: center;
+      padding: 15px;
+      background: #89c0e4;
+      margin-top: 120px;
+      font-size: 0.8rem;
+      color: #666;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      height: 100%;
+    }
