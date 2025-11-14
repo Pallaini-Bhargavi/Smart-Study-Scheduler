@@ -41,3 +41,9 @@ This web app helps students create a custom study schedule by entering subjects 
 
 ---
 
+## 📚 Smart Study Scheduler
+
+Clone the project:
+```bash
+git clone https://github.com/Pallaini-Bhargavi/Smart-Study-Scheduler.git
+
