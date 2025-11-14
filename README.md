@@ -16,17 +16,17 @@ This web app helps students create a custom study schedule by entering subjects 
 ## 🖼️ Screenshots
 
 ### 🟦 Dashboard (Home Page)
-<img src="screenshots/1.jpg" width="750">
+<img src="1.jpg" width="750">
 
 ---
 
 ### 🟩 Generated Study Schedule
-<img src="screenshots/2.jpg" width="750">
+<img src="2.jpg" width="750">
 
 ---
 
 ### 🟧 Store Resources Page
-<img src="screenshots/3.jpg" width="750">
+<img src="3.jpg" width="750">
 
 ---
 
@@ -40,3 +40,4 @@ This web app helps students create a custom study schedule by entering subjects 
 6. Add study resources (YouTube/Google links) from the Resource Manager page  
 
 ---
+
