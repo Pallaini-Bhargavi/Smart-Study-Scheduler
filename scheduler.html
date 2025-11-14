@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Study Scheduler</title>
+    <link rel="stylesheet" href="scheduler.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <button id="backBtn">← Back</button>
+        </div>
+        <h1>Smart Study Scheduler</h1>
+    </header>
+
+    <div class="container">
+        <h1>Add Study Schedule</h1>
+
+        <form id="studyForm">
+            <label>Start Time: <input type="time" id="startTime" required /></label><br>
+            <label>Total Study Hours: <input type="number" id="totalHours" min="1" required /></label><br>
+
+            <div id="subjectsContainer">
+                <h3>Subjects:</h3>
+                <div class="subject">
+                    <input type="text" placeholder="Subject Name" class="subjectName" required />
+                    <input type="number" placeholder="Hours Needed" class="subjectHours" min="1" required />
+                </div>
+            </div>
+            <button type="button" id="addSubject">+ Add Another Subject</button><br><br>
+
+            <button type="submit">Generate Schedule</button>
+        </form>
+
+        <hr>
+
+        <div id="scheduleOutput">
+            <!-- Schedule will appear here -->
+        </div>
+
+        <button id="resetSchedule" style="display:none;">Reset Schedule</button>
+    </div>
+    <script src="scheduler.js"></script>
+      <footer>
+    &copy; 2025 Smart Study Scheduler. All rights reserved.
+  </footer>
+</body>
+
+</html>

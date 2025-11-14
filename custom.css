@@ -1,0 +1,166 @@
+ * {
+      box-sizing: border-box;
+    }
+    
+    header {
+  background-color: #2980b9;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 100;
+  position: fixed;
+}
+
+.header-left {
+  position: absolute;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+header button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+header button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 70px;
+      margin-bottom:10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #2980b9;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 6px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="time"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 6px;
+      background-color: #3498db;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    #resetSchedule {
+      background-color: #e74c3c;
+      margin-left: 10px;
+    }
+
+    #resetSchedule:hover {
+      background-color: #c0392b;
+    }
+
+    .subject-item {
+      background-color: #ecf5fd;
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .subject-item button {
+      background-color: #e74c3c;
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 25px;
+      border-collapse: collapse;
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #3498db;
+      color: white;
+      text-align: left;
+    }
+    .break-row {
+  background-color: #e74c3c; 
+  color: white;              
+  font-style: italic;
+  text-align: center;
+}
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+    }

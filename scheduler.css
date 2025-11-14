@@ -1,0 +1,185 @@
+    header {
+      background-color: #2980b9;
+      color: white;
+      position: fixed;
+      font-family: Arial, sans-serif;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+      box-sizing: border-box;
+      z-index: 100;
+      position: fixed;
+    }
+
+    .header-left {
+      position: absolute;
+      left: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: aliceblue;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    header button {
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    header button:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+      margin-top: 63px;
+      padding: 20px;
+      color: #333;
+    }
+
+    .container {
+      margin: 70px auto 0 auto;
+      max-width: 700px;
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    form label {
+      display: block;
+      margin: 10px 0 6px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="time"] {
+      padding: 8px;
+      width: 60%;
+      max-width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    #addSubject {
+      margin-top: 10px;
+      padding: 8px 12px;
+      cursor: pointer;
+      background-color: #3498db;
+      border: none;
+      color: white;
+      border-radius: 4px;
+    }
+
+    #addSubject:hover {
+      background-color: #2980b9;
+    }
+
+    button[type="submit"],
+    #resetSchedule {
+      background-color: #27ae60;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 15px;
+      font-size: 1rem;
+    }
+
+    button[type="submit"]:hover,
+    #resetSchedule:hover {
+      background-color: #1e8449;
+    }
+
+    .subject {
+      margin-bottom: 10px;
+    }
+
+    #scheduleOutput {
+      margin-top: 20px;
+      overflow-x: auto;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #2980b9;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    .completed {
+      text-decoration: line-through;
+      color: gray;
+    }
+
+    .break {
+      background-color: #ffeaa7;
+      font-style: italic;
+    }
+
+    .checkbox-cell {
+      width: 40px;
+    }
+
+    @media (max-width: 600px) {
+
+      input[type="text"],
+      input[type="number"],
+      input[type="time"] {
+        width: 100%;
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #89c0e4;
+      margin-top: 120px;
+      font-size: 0.8rem;
+      color: #666;
+    }
+
+    .break,.break-cell {
+  background-color: #ff4d4d; 
+  color: white;
+  font-style: italic;
+}

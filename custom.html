@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Study Scheduler</title>
+  <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-left">
+      <button id="backBtn">← Back</button>
+    </div>
+    <h1>Smart Study Scheduler</h1>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Study Preferences</h2>
+      <label for="defaultDuration">Default Study Duration (in minutes):</label>
+      <input type="number" id="defaultDuration" placeholder="e.g. 60" />
+
+      <label for="breakInterval">Break after every (minutes):</label>
+      <input type="number" id="breakInterval" placeholder="e.g. 120" />
+
+      <label for="startTime">Preferred Start Time:</label>
+      <input type="time" id="startTime" />
+    </div>
+
+    <div class="card">
+      <h2>Add Subjects</h2>
+      <label for="subjectName">Subject:</label>
+      <input type="text" id="subjectName" placeholder="e.g. Subject Name" />
+
+      <label for="subjectDuration">Duration (minutes):</label>
+      <input type="number" id="subjectDuration" placeholder="e.g. 60" />
+
+      <button id="addSubjectBtn">Add Subject</button>
+      <div id="subjectsList">No subjects added yet.</div>
+    </div>
+
+    <div class="card">
+      <h2>Generate Schedule</h2>
+      <button id="generateScheduleBtn">Generate Schedule</button>
+      <button id="resetSchedule">Reset Schedule</button>
+
+      <table id="scheduleTable" style="display:none;">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Subject</th>
+            <th>Completed</th>
+          </tr>
+        </thead>
+        <tbody id="scheduleBody"></tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <script src="custom.js"></script>
+</body>
+
+</html>
